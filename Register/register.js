@@ -86,7 +86,7 @@ form.addEventListener("submit", function (e) {
     confirm_password.value == "123123"
   ) {
     window.location.href = "http://127.0.0.1:5501/Enterpin/enterpin.html";
-    alert("Registrasi Berhasil");
+    // alert("Registrasi Berhasil");
   }
 });
 

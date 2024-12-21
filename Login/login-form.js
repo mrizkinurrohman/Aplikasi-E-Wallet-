@@ -54,6 +54,6 @@ form.addEventListener("submit", function (e) {
   if (email.value == "galuh@gmail.com" && password.value == "123456") {
     e.preventDefault();
     window.location.href = "http://127.0.0.1:5501/Dashboard/dashboard.html";
-    alert("Login Berhasil");
+    // alert("Login Berhasil");
   }
 });
