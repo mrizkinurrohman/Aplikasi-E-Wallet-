@@ -17,8 +17,8 @@ form.addEventListener("submit", function (e) {
   }
 
   if (email.value == "galuh@gmail.com") {
-    alert("Verification link sent to your email");
-    window.location.href = "http://127.0.0.1:5501/Login/login.html";
+    // alert("Verification link sent to your email");
+    location.href = "http://127.0.0.1:5501/Login/login.html";
     return;
   } else {
     email_error.innerHTML = "";
