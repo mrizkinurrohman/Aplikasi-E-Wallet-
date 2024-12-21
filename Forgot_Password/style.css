@@ -1,0 +1,132 @@
+:root {
+  --font-logo-color: hsla(231, 100%, 58%, 1);
+  --btn-color: hsla(231, 100%, 58%, 1);
+  --border-style: 1px solid hsla(0, 0%, 91%, 1);
+  --nav-color: hsla(221, 12%, 35%, 1);
+  --heading-color: hsla(225, 58%, 10%, 1);
+  --icon-color: hsla(221, 12%, 35%, 1);
+  --logout-color: hsla(0, 100%, 41%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--btn-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 550px;
+  height: 446px;
+  background: white;
+  border-radius: 20px;
+  font-family: Montserrat;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container > div:nth-child(1) {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.container > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.container > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.container > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container > form > div > div {
+  border: hsla(0, 0%, 87%, 1) solid 1px;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.container > form > div > label {
+  margin-top: 20px;
+}
+
+.container > form > div > div > input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.container > form > div > button {
+  background: var(--btn-color);
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+
+.container > form > div > button:hover {
+  background: blue;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 760px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -120px;
+    width: 350px;
+    height: 400px;
+  }
+
+  .container > div:nth-child(1) {
+    margin: 10px 0;
+    justify-content: start;
+  }
+
+  .container > div:nth-child(2) {
+    margin: 5px 0;
+  }
+
+  .container > div:nth-child(3) {
+    margin-top: 20px 0;
+  }
+
+  .container > form > div {
+    margin-top: -10px;
+    font-weight: 600;
+  }
+
+  .container > form > div > div {
+    margin-top: -20px;
+  }
+
+  .container > form > div > button {
+    margin-top: -40px;
+  }
+}

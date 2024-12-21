@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter Pin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="enterpin.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="container-main">
+          <div>
+            <img
+              src="./images/logo.svg"
+              alt="icon-walletKu"
+              width="32px"
+              height="32px"
+            />
+            <p>E-Walletku</p>
+          </div>
+          <div>
+            <h3>
+              Enter Your Pin 👋
+          </div>
+          <div>
+            <p>
+              Please save your pin because this so important.
+            </p>
+          </div>
+          
+          <form action="">
+            <div class="pin-input-container">
+              <input
+                type="password"
+                inputmode="number"
+                maxlength="1"
+                min="0"
+                max="9"
+                class="pin-input"
+              />
+              <input
+                type="password"
+                inputmode="number"
+                maxlength="1"
+                min="0"
+                max="9"
+                class="pin-input"
+                id="pin2"
+              />
+              <input
+                type="password"
+                inputmode="number"
+                maxlength="1"
+                min="0"
+                max="9"
+                class="pin-input"
+                id="pin3"
+              />
+              <input
+                type="password"
+                inputmode="number"
+                maxlength="1"
+                min="0"
+                max="9"
+                class="pin-input"
+                id="pin4"
+              />
+              <input
+                type="password"
+                inputmode="number"
+                maxlength="1"
+                min="0"
+                max="9"
+                class="pin-input"
+                id="pin5"
+              />
+              <input
+                type="password"
+                inputmode="number"
+                maxlength="1"
+                min="0"
+                max="9"
+                class="pin-input"
+                id="pin6"
+              />
+            </div>
+            <span class="error-message" id="error-message" style="color: red; font-size: 12px; font-weight: bold;"></span>
+            <button class="btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="icon">
+      <img src="./images/icon-register.png" alt="" style="width: 670px; "/>
+    </section>
+  </body>
+</html>

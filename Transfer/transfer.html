@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="transfer.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./images/logo.svg" alt="logo" width="32px" height="32px" />
+        <p>E-Wallet</p>
+      </div>
+      <div>
+        <p>Galuh Wizard</p>
+        <img
+          src="./images/profile.png"
+          alt="profile"
+          width="48px"
+          height="48px"
+        />
+        <img
+          src="./images/dropdown.svg"
+          alt="dropdown"
+          width="24px"
+          height="24px"
+          class="icon-dropdown"
+        />
+      </div>
+    </header>
+    <aside>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul id="menu-list" class="hidden">
+          <li>
+            <img src="./images/dashboard.svg" alt="dashboard" />
+            <a href="/Dashboard/dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <img src="./images/send.svg" alt="transfer" />
+            <a href="/Transfer_Detail/transfer_detail.html">Transfer</a>
+          </li>
+          <li>
+            <img src="./images/history.svg" alt="history" />
+            <a href="/History_Transaksi/history.html">History</a>
+          </li>
+          <li>
+            <img src="./images/upload.svg" alt="Top Up" />
+            <a href="/Topup/topup.html">Top Up</a>
+          </li>
+          <li>
+            <img src="./images/user.svg" alt="User" />
+            <a href="/Edit_Pofile_Successed/edit_succes.html">Profile</a>
+          </li>
+          <li>
+            <img src="./images/logout.svg" alt="Log Out" />
+            <a href="/index.html">Log Out</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="container-main">
+        <section class="transfer-step">
+          <div>
+            <img src="images/send-blue.svg" alt="send" width="20" height="20" />
+            <p>Transfer Money</p>
+          </div>
+          <div>
+            <div class="step active">
+              <div class="circle">
+                <p>1</p>
+              </div>
+              <p>Find People</p>
+            </div>
+            <div class="conjunction"></div>
+            <div class="step">
+              <div class="circle">
+                <p>2</p>
+              </div>
+              <p>Set Nominal</p>
+            </div>
+            <div class="conjunction"></div>
+            <div class="step">
+              <div class="circle">
+                <p>3</p>
+              </div>
+              <p>Finish</p>
+            </div>
+          </div>
+        </section>
+        <section class="transfer-info">
+          <div>
+            <div class="find-people">
+              <div>
+                <h3>Find People</h3>
+                <p style="font-size: 12px">8 Result Found For Ghaluh</p>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Enter Number Or Full Name"
+                />
+                <img src="images/search.svg" alt="search" />
+              </div>
+            </div>
+            <div class="receiver">
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+              <div>
+                <img
+                  src="images/profile-box.png"
+                  alt="receiver"
+                  width="48px"
+                  height="48px"
+                />
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <img
+                  src="images/star.svg"
+                  alt="favorite"
+                  width="24px"
+                  height="24px"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

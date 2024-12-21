@@ -1,0 +1,396 @@
+:root {
+  --font-logo-color: hsla(231, 100%, 58%, 1);
+  --btn-color: hsla(231, 100%, 58%, 1);
+  --border-style: 1px solid hsla(0, 0%, 91%, 1);
+  --nav-color: hsla(221, 12%, 35%, 1);
+  --heading-color: hsla(225, 58%, 10%, 1);
+  --icon-color: hsla(221, 12%, 35%, 1);
+  --logout-color: hsla(0, 100%, 41%, 1);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Montserrat, "Courier New", Courier, monospace;
+  display: grid;
+  grid-template-columns: minmax(50px, 0.7fr) minmax(50px, 4.5fr);
+  grid-template-rows: 76px, 1fr;
+  grid-template-areas:
+    "header header"
+    "aside main";
+}
+
+/* awal css header */
+/* header adalah parent */
+header {
+  grid-area: header;
+  display: flex;
+  border-bottom: var(--border-style);
+  justify-content: space-between;
+  padding: 40px;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+/* cari div pertama yang di dalamnya divnya ada p di dalam element header(sebagai parent) */
+header > div:nth-child(1) > p {
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--font-logo-color);
+}
+
+header > div:nth-child(2) {
+  color: var(--icon-color);
+}
+
+/* img ke tiga di dalem header */
+header > div:nth-child(2) > img:nth-child(3) {
+  cursor: pointer;
+}
+
+/* akhir css header */
+
+/* awal css navbar */
+aside {
+  grid-area: aside;
+  padding-left: 30px;
+  padding-top: 20px;
+  color: var(--nav-color);
+  border-right: var(--border-style);
+}
+
+aside ul {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  flex-basis: 45px;
+  align-items: center;
+  padding: 10px;
+}
+
+aside li > a {
+  text-decoration: none;
+}
+
+aside li > a:hover {
+  color: white;
+}
+
+aside li:last-child {
+  color: var(--logout-color);
+}
+
+aside li:not(:last-child) > img {
+  filter: brightness(0) saturate(100%);
+}
+
+aside li:hover {
+  background: var(--btn-color);
+  color: white;
+}
+
+aside li:active {
+  transform: scale(0.85);
+}
+
+aside li:hover > img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(222deg) brightness(104%) contrast(108%);
+}
+
+aside li:hover:last-child > img {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(100%) saturate(7430%)
+    hue-rotate(7deg) brightness(107%) contrast(101%);
+}
+
+/* akhir css navbar */
+
+main {
+  grid-area: main;
+  font-size: 16px;
+  padding: 30px;
+}
+
+/* .container-main {
+  background: red;
+} */
+
+.transfer-step > div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.transfer-step > div:nth-child(1) p {
+  font-weight: 600;
+}
+
+.step {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+  background: grey;
+  width: 24px;
+  height: 24px;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conjunction {
+  /* background: brown; */
+  width: 85px;
+  border-bottom: 1px dashed black;
+  transform: translateY(-50%);
+}
+
+.active {
+  color: var(--btn-color);
+}
+.active .circle {
+  background: var(--btn-color);
+}
+
+.transfer-info {
+  border: var(--border-style);
+  padding: 30px;
+}
+
+.transfer-info label,
+.transfer-info p:nth-child(1) {
+  font-weight: 600;
+}
+
+.transfer-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.receiver {
+  display: flex;
+  background: hsla(0, 0%, 91%, 0.3);
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.receiver > div {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  font-size: 14px;
+}
+
+.receiver > img {
+  border-radius: 4px;
+}
+
+.receiver > div > div {
+  display: flex;
+  background: var(--btn-color);
+  color: white;
+  gap: 8px;
+  border-radius: 6px;
+  padding: 4px 12px 4px 8px;
+}
+
+.receiver > img:last-child {
+  cursor: pointer;
+}
+
+label + p {
+  font-size: 14px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form > div:nth-child(2) > div {
+  border: var(--border-style);
+  height: 62px;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+form > div:nth-child(2) > div > input {
+  flex: 1;
+  border: none;
+  background: transparent;
+}
+
+form > div:nth-child(2) > div > input:focus {
+  outline: none;
+}
+
+form textarea {
+  height: 223px;
+  resize: none;
+  padding: 10px;
+  border: var(--border-style);
+  background: transparent;
+  outline: none;
+}
+
+form button {
+  background: var(--btn-color);
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Montserrat;
+  border: none;
+}
+
+/* form button:hover {
+  background: var(--primary-color-hover);
+}
+
+form button:active {
+  background: var(--primary-color);
+} */
+
+.modal-container {
+  display: none;
+  position: fixed;
+  /* margin: 50px auto; */
+  z-index: 1;
+  left: 205px;
+  top: 0px;
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container.active {
+  display: block;
+}
+
+.modal-container > .modal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 596px;
+  height: 590px;
+  background: white;
+  padding: 30px;
+  display: absolute;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.modal-container > .modal > .modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.modal-container > .modal > .modal-header > .modal-close {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.modal-container > .modal > .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+  border-top: hsla(0, 0%, 91%, 1) 1px solid;
+  color: black;
+}
+
+.modal-container > .modal > .modal-body > p:nth-child(2) {
+  font-weight: 600;
+}
+
+.modal-container > .modal > div > button {
+  display: flex;
+  flex-direction: column;
+  background: var(--btn-color);
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Montserrat;
+  border: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container > .modal > div > button:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.modal-container > .modal > div > button:nth-child(2) {
+  background: white;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
+
+.fade-in {
+  animation: fadeIn 0.7s;
+}
+
+.fade-out {
+  animation: fadeOut 0.7s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

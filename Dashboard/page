@@ -1,0 +1,48 @@
+                
+                  <div>
+                      <img src="" alt="" />
+                      <p>Balance</p>
+                    </div>
+                    <p>Rp.120.000</p>
+                    <div>
+                      <p>+2%</p>
+                      <img src="./images/arrow-green.svg" alt="" />
+                      <p>3 Days Ago</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <img src="" alt="" />
+                      <p>Balance</p>
+                    </div>
+                    <p>Rp.120.000</p>
+                    <div>
+                      <p>+2%</p>
+                      <img src="./images/arrow-green.svg" alt="" />
+                      <p>3 Days Ago</p>
+                    </div>
+                  </div>
+      
+                  <div class="fast-service">
+                    <p>Fast Service</p>
+                    <div>
+                      <button>
+                        <img src="./images/money-up.svg" alt="" />
+                        <p>Top Up</p>
+                      </button>
+                      <button>
+                        <img src="./images/send.svg" alt="" />
+                        <p>Transfer</p>
+                      </button>
+                    </div>
+                  </div>
+                  <div? class="grafik-content">
+                    <p>Income Chart</p>
+                    <div>
+                      <input type="date" />
+                      <select name="" id="">
+                        <option value="default">Income</option>
+                      </select>
+                    </div>
+                    <img src="./images/chart.svg" alt="" />
+                </div>

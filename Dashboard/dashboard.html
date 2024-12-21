@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./images/logo.svg" alt="logo" width="32px" height="32px" />
+        <p>E-Wallet</p>
+      </div>
+      <div>
+        <p>Galuh Wizard</p>
+        <img
+          src="./images/profile.png"
+          alt="profile"
+          width="48px"
+          height="48px"
+        />
+        <img
+          src="./images/dropdown.svg"
+          alt="dropdown"
+          width="24px"
+          height="24px"
+        />
+      </div>
+    </header>
+    <aside>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul id="menu-list" class="hidden">
+          <li>
+            <img src="./images/dashboard.svg" alt="dashboard" />
+            <a href="/Dashboard/dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <img src="./images/send.svg" alt="transfer" />
+            <a href="/Transfer_Detail/transfer_detail.html">Transfer</a>
+          </li>
+          <li>
+            <img src="./images/history.svg" alt="history" />
+            <a href="/History_Transaksi/history.html">History</a>
+          </li>
+          <li>
+            <img src="./images/upload.svg" alt="Top Up" />
+            <a href="/Topup/topup.html">Top Up</a>
+          </li>
+          <li>
+            <img src="./images/user.svg" alt="User" />
+            <a href="/Edit_Pofile_Successed/edit_succes.html">Profile</a>
+          </li>
+          <li>
+            <img src="./images/logout.svg" alt="Log Out" />
+            <a href="/index.html">Log Out</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="main-container">
+        <div class="main-content">
+          <div class="header-content">
+            <div class="balance">
+              <div>
+                <img src="./images/balance.svg" alt="" />
+                <p>Balance</p>
+              </div>
+              <p>Rp.120.000</p>
+              <div>
+                <p>+2%</p>
+                <img src="./images/arrow-green.svg" alt="" />
+                <p>3 Days Ago</p>
+              </div>
+            </div>
+            <div class="income">
+              <div>
+                <img src="./images/money-up.svg" alt="" />
+                <p>Balance</p>
+              </div>
+              <p>Rp.120.000</p>
+              <div>
+                <p>+2%</p>
+                <img src="./images/arrow-green.svg" alt="" />
+                <p>3 Days Ago</p>
+              </div>
+            </div>
+            <div>
+              <div class="expense">
+                <img src="./images/money.svg" alt="" />
+                <p>Balance</p>
+              </div>
+              <p>Rp.120.000</p>
+              <div>
+                <p>+2%</p>
+                <img src="./images/arrow-green.svg" alt="" />
+                <p>3 Days Ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="fast-service">
+            <p>Fast Service</p>
+            <div>
+              <button>
+                <img src="./images/money-up2.svg" alt="" />
+                <p>Top Up</p>
+              </button>
+              <button>
+                <img src="./images/send.svg" alt="" />
+                <p>Transfer</p>
+              </button>
+            </div>
+          </div>
+          <div class="grafik-content">
+            <div>
+              <div>
+                <p style="font-size: 16px; font-weight: 500">Income Chart</p>
+                <div>
+                  <select name="" id="">
+                    <option value="default">7 Days</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="default">Income</option>
+                  </select>
+                </div>
+              </div>
+              <img
+                src="./images/Chart.png"
+                alt=""
+                width="668px"
+                height="472px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="aside-content">
+          <div class="aside-header">
+            <div>
+              <div>
+                <p>Transaction History</p>
+                <a href="">Seem All</a>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+              <div>
+                <img src="./images/1.png" alt="" />
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>
+                </div>
+                <p>+Rp50.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

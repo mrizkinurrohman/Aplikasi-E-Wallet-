@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="register.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="container-main">
+          <div>
+            <img
+              src="./images/logo.svg"
+              alt="icon-walletKu"
+              width="32px"
+              height="32px"
+            />
+            <p>E-Walletku</p>
+          </div>
+          <div>
+            <h3>
+              Start Accessing Banking Needs With All Devices and All Platforms
+              With 30.000+ Users
+            </h3>
+          </div>
+          <div>
+            <p>
+              Transfering money is eassier than ever, you can access Zwallet
+              wherever you are. Desktop, laptop, mobile phone? we cover all of
+              that for you!
+            </p>
+          </div>
+          <div>
+            <img src="images/google.svg" alt="Google" />
+            <a
+              href=""
+              style="
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 20px;
+                text-decoration: none;
+              "
+            >
+              Sign In With Google
+            </a>
+          </div>
+          <div>
+            <img src="images/fb.svg" alt="Google" />
+            <a
+              href=""
+              style="
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 20px;
+                text-decoration: none;
+              "
+            >
+              Sign In With Facebook
+            </a>
+          </div>
+          <!-- <form action="" autocomplete="" onsubmit="validate()"> -->
+          <form action="" autocomplete="" id="form">
+            <div>
+              <label for="email">Email</label>
+              <div>
+                <img
+                  src="./images/mail.svg"
+                  alt=""
+                  width="14px"
+                  height="12px"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  class="input-form"
+                />
+              </div>
+              <span
+                id="email_error"
+                style="color: red; font-size: 12px; font-weight: bold"
+              ></span>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <div>
+                <img
+                  src="./images/password.svg"
+                  alt=""
+                  width="14px"
+                  height="14px"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  class="input-form"
+                />
+                <span><i id="toggler" class="far fa-eye"></i></span>
+              </div>
+              <span
+                id="password_error"
+                style="color: red; font-size: 12px; font-weight: bold"
+              ></span>
+            </div>
+            <div>
+              <label for="confirm_password">Confirm Password</label>
+              <div>
+                <img
+                  src="./images/password.svg"
+                  alt=""
+                  width="14px"
+                  height="14px"
+                />
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  placeholder="Enter your password"
+                  class="input-form"
+                />
+                <span><i id="toggler2" class="far fa-eye"></i></span>
+              </div>
+              <span
+                id="confirm_password_error"
+                style="color: red; font-size: 12px; font-weight: bold"
+              ></span>
+            </div>
+            <div>
+              <button type="submit">Register</button>
+            </div>
+            <div>
+              <p>
+                Have An Account?
+                <a href="/Login/login.html" style="text-decoration: none"
+                  >Login</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="icon">
+      <img src="./images/icon-login.png" alt="" />
+    </section>
+  </body>
+</html>

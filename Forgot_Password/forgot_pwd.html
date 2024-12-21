@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="forgot.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="images/logo.svg" alt="" width="32px" height="32px" />
+        <p
+          style="
+            color: hsla(231, 100%, 58%, 1);
+            font-weight: 500;
+            font-family: 'Nunito Sans';
+          "
+        >
+          E-Wallet
+        </p>
+      </div>
+      <div>
+        <h3>Fill Out Form Correctly 👋</h3>
+      </div>
+      <div>
+        <p>We will send new password to your email</p>
+      </div>
+      <!-- <form action="" onsubmit="validate()"> -->
+      <form action="">
+        <div>
+          <label for="email">Email</label>
+          <div>
+            <img src="images/mail.svg" alt="" width="14px" height="12px" />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              name="email"
+            />
+          </div>
+          <span
+            id="email_error"
+            style="color: red; font-size: 12px; font-weight: bold"
+          ></span>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

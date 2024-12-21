@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="change_pwd.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./images/logo.svg" alt="logo" width="32px" height="32px" />
+        <p>E-Wallet</p>
+      </div>
+      <div>
+        <p>Galuh Wizard</p>
+        <img
+          src="./images/profile.png"
+          alt="profile"
+          width="48px"
+          height="48px"
+        />
+        <img
+          src="./images/dropdown.svg"
+          alt="dropdown"
+          width="24px"
+          height="24px"
+        />
+      </div>
+    </header>
+    <aside>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul id="menu-list" class="hidden">
+          <li>
+            <img src="./images/dashboard.svg" alt="dashboard" />
+            <a href="/Dashboard/dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <img src="./images/send.svg" alt="transfer" />
+            <a href="/Transfer_Detail/transfer_detail.html">Transfer</a>
+          </li>
+          <li>
+            <img src="./images/history.svg" alt="history" />
+            <a href="/History_Transaksi/history.html">History</a>
+          </li>
+          <li>
+            <img src="./images/upload.svg" alt="Top Up" />
+            <a href="/Topup/topup.html">Top Up</a>
+          </li>
+          <li>
+            <img src="./images/user.svg" alt="User" />
+            <a href="/Edit_Pofile_Successed/edit_succes.html">Profile</a>
+          </li>
+          <li>
+            <img src="./images/logout.svg" alt="Log Out" />
+            <a href="/index.html">Log Out</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section class="container-mainheader">
+        <img src="./images/send-blue.svg" alt="" />
+        <p>Profile</p>
+      </section>
+      <section class="container-main">
+        <p>Change Password</p>
+        <form>
+          <label for="change_p">Existing Password</label>
+          <div>
+            <img
+              src="./images/password.svg"
+              alt="Password"
+              width="12.33px"
+              height="12.33px"
+            />
+            <input
+              type="password"
+              name="change_p"
+              id="change_p"
+              placeholder="Change Password"
+            />
+            <span style="color: grey"
+              ><i id="toggler" class="far fa-eye"></i
+            ></span>
+          </div>
+          <span
+            id="change_password_error"
+            style="font-size: 12px; font-weight: bold; color: red"
+          ></span>
+          <label for="new_p">New Password</label>
+          <div>
+            <img
+              src="./images/password.svg"
+              alt="Password"
+              width="12.33px"
+              height="12.33px"
+            />
+            <input
+              type="password"
+              name="new_p"
+              id="new_p"
+              placeholder="New Password"
+            />
+            <span style="color: grey"
+              ><i id="toggler2" class="far fa-eye"></i
+            ></span>
+          </div>
+          <span
+            id="new_password_error"
+            style="font-size: 12px; font-weight: bold; color: red"
+          ></span>
+          <label for="confirm_p">Confirm Password</label>
+          <div>
+            <img
+              src="./images/password.svg"
+              alt="Password"
+              width="12.33px"
+              height="12.33px"
+            />
+            <input
+              type="password"
+              name="confirm_p"
+              id="confirm_p"
+              placeholder="Confirm Password"
+            />
+            <span style="color: grey"
+              ><i id="toggler3" class="far fa-eye"></i
+            ></span>
+          </div>
+          <span
+            id="confirm_password_error"
+            style="font-size: 12px; font-weight: bold; color: red"
+          ></span>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

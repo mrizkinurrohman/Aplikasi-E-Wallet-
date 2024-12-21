@@ -1,0 +1,157 @@
+:root {
+  --biru-color: hsla(225, 97%, 61%, 1);
+  --biru--btn: hsla(231, 100%, 58%, 1);
+  --border-color: hsla(0, 0%, 91%, 1);
+  --nav-color: hsla(221, 12%, 35%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--biru-color);
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.container {
+  width: 710px;
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 0px 40px 40px 0;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  line-height: 25px;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-main > div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Nunito Sans";
+  color: var(--biru-color);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container-main > div:nth-child(2) h3 {
+  font-weight: 500;
+}
+
+.container-main > div:nth-child(4) {
+  border: 1px solid hsla(0, 0%, 91%, 1);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container-main > div:nth-child(5) {
+  border: 1px solid hsla(0, 0%, 91%, 1);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container-main > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-main > form > div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  /* background: hsla(0, 0%, 87%, 1); */
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.container-main > form > div > div {
+  border: 1px solid hsla(0, 0%, 87%, 1);
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.container-main > form > div > div > span > i {
+  /* background-color: red; */
+  cursor: pointer;
+  color: grey;
+}
+
+.container-main > form > div > div > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: Montserrat;
+  background: none;
+}
+
+.container-main > form > div > button {
+  background: var(--biru--btn);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container-main > form > div:last-child p {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .icon {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    border-radius: 0px;
+    font-size: 12px;
+  }
+
+  .container-main > div:nth-child(4) {
+    font-size: 16px;
+    width: 100%;
+  }
+  .container-main > div:nth-child(5) {
+    font-size: 16px;
+    width: 100%;
+  }
+  .container-main {
+    width: 100%;
+  }
+}
