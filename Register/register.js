@@ -82,8 +82,8 @@ form.addEventListener("submit", function (e) {
 
   if (
     email.value == "galuh@gmail.com" &&
-    password.value == "123123" &&
-    confirm_password.value == "123123"
+    password.value == "111111" &&
+    confirm_password.value == "111111"
   ) {
     location.href = "http://127.0.0.1:5501/Enterpin/enterpin.html";
     // alert("Registrasi Berhasil");

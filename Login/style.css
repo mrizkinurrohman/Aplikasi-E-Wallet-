@@ -164,22 +164,23 @@ body {
   gap: 10px;
 }
 
-@media (max-width: 600px) {
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 768px) {
+  .icon {
+    display: none;
   }
 
   .container {
-    width: 100%;
+    min-width: 50%;
+    /* background-color: red; */
     border-radius: 0px;
   }
 
   .container-main > div:nth-child(3) {
-    width: 50%;
+    width: 350px;
   }
   .container-main > div:nth-child(4),
   .container-main > div:nth-child(5) {
-    width: 50%;
+    min-width: 50%;
   }
 
   .container-main > form > .input-form {
@@ -192,22 +193,18 @@ body {
   }
 
   .container-main > form > div > div {
-    width: 50%;
+    min-width: 50%;
   }
 
   .container-main > form > div > button {
-    width: 50%;
+    min-width: 50%;
   }
 
   .container-main > form > div:last-child p {
     /* background-color: red; */
     text-align: center;
-    width: 50%;
+    min-width: 50%;
     margin-top: -50px;
-  }
-
-  .icon {
-    display: none;
   }
 }
 

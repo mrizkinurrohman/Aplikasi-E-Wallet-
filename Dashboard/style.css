@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+* a {
+  text-decoration: none;
+}
+
 body {
   min-height: 100vh;
   font-family: Montserrat, "Courier New", Courier, monospace;
@@ -331,6 +335,7 @@ aside li:hover:last-child > img {
 
   aside {
     border-right: none;
+    padding: 0px;
   }
 
   nav ul.hidden {
@@ -340,8 +345,8 @@ aside li:hover:last-child > img {
 
   nav ul {
     margin-top: 10px;
-    margin-left: -30px;
-    width: 420px;
+    /* margin-left: -30px; */
+    width: 425px;
     /* background-color: red; */
     gap: 0px;
     background: #e8e8e8;
@@ -418,7 +423,7 @@ aside li:hover:last-child > img {
   }
 
   .main-content > .grafik-content > div > img {
-    width: 220px;
+    width: 320px;
     height: 200px;
   }
 

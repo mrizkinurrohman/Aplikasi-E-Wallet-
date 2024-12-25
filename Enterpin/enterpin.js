@@ -20,11 +20,11 @@ form.addEventListener("submit", (e) => {
 
   if (
     input[0].value != "1" ||
-    input[1].value != "2" ||
-    input[2].value != "3" ||
-    input[3].value != "4" ||
-    input[4].value != "5" ||
-    input[5].value != "6"
+    input[1].value != "1" ||
+    input[2].value != "1" ||
+    input[3].value != "1" ||
+    input[4].value != "1" ||
+    input[5].value != "1"
   ) {
     error_message.innerHTML = "Pin salah";
     return;
@@ -34,11 +34,11 @@ form.addEventListener("submit", (e) => {
 
   if (
     input[0].value == "1" &&
-    input[1].value == "2" &&
-    input[2].value == "3" &&
-    input[3].value == "4" &&
-    input[4].value == "5" &&
-    input[5].value == "6"
+    input[1].value == "1" &&
+    input[2].value == "1" &&
+    input[3].value == "1" &&
+    input[4].value == "1" &&
+    input[5].value == "1"
   ) {
     window.location.href =
       "http://127.0.0.1:5501/Forgot_password/forgot_pwd.html";

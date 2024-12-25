@@ -51,7 +51,7 @@ form.addEventListener("submit", function (e) {
     password_error.innerHTML = "Password tidak boleh sama";
   }
 
-  if (email.value == "galuh@gmail.com" && password.value == "123456") {
+  if (email.value == "galuh@gmail.com" && password.value == "111111") {
     e.preventDefault();
     window.location.href = "http://127.0.0.1:5501/Dashboard/dashboard.html";
     // alert("Login Berhasil");

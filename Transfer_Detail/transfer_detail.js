@@ -67,11 +67,11 @@ form.addEventListener("submit", (e) => {
       // validasi apabila pin benar
       if (
         pin[0].value == "1" &&
-        pin[1].value == "2" &&
-        pin[2].value == "3" &&
-        pin[3].value == "4" &&
-        pin[4].value == "5" &&
-        pin[5].value == "6"
+        pin[1].value == "1" &&
+        pin[2].value == "1" &&
+        pin[3].value == "1" &&
+        pin[4].value == "1" &&
+        pin[5].value == "1"
       ) {
         e.preventDefault();
         modal_container.classList.remove("active");

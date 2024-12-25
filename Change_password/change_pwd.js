@@ -76,4 +76,31 @@ form.addEventListener("submit", function (e) {
   } else {
     confirm_password_error.innerHTML = "";
   }
+
+  if (new_p.value != confirm_p.value) {
+    e.preventDefault();
+    confirm_password_error.innerHTML = "Password tidak sama";
+  } else {
+    confirm_password_error.innerHTML = "";
+  }
+
+  if (
+    change_p.value == "111111" &&
+    new_p.value == "111111" &&
+    confirm_p.value == "111111"
+  ) {
+    location.href =
+      "http://127.0.0.1:5501/Edit_Pofile_Successed/edit_succes.html";
+  }
+
+  // if (
+  //   change_p.value != "123456" ||
+  //   new_p.value != "123456" ||
+  //   confirm_p.value != "123456"
+  // ) {
+  //   e.preventDefault();
+  //   change_password_error.innerHTML = "Password salah";
+  //   new_password_error.innerHTML = "Password salah";
+  //   confirm_password_error.innerHTML = "Password salah";
+  // }
 });
